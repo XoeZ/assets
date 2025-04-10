@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"> <!-- Accedemos al script de style.css -->
+    <title>Document</title>
+</head>
+<body>
+    <aside>  <!-- Referencia de contenido complementario, esta es una imagen para el diseño de la pagina -->
+        <div>
+            <img src="../img/Fondo abstracto.png" alt="fondoAbstractoDecorativo" class="imagenDeFondoAbstracto">
+        </div>
+    </aside> <!-- Cierre del contenido complementario-->
+
+    <header>  <!-- Inicio del encabezado de la pagina -->
+        <h1 id="tituloPrincipal">Vota por tu juego favorito!</h1> <!-- Titulo de la pagina -->
+    </header> <!-- Cierre del encabezado de la pagina -->
+
+    <section> <!-- inicio de bloque tematico de juegos para votar-->
+        <main> <!-- Inicio del contenido principal -->
+            <div class="juegosParaVotar">  <!-- En esta clase se guardan las imagenes de los videojuegos a votar -->
+                <img src="../img/Super_Mario_World_Coverart.png" alt="juegoIzquierdo" width="150" onclick="votarJuego()" class="juego"> <!-- Imagen del primer videojuego -->
+                <img src="https://png.pngtree.com/png-vector/20221101/ourmid/pngtree-luxury-vs-versus-transparent-vector-png-image_6405569.png" alt="Vs"> <!-- Imagen del logo Vs -->
+                <img src="../img/Megaman X.png" onclick="votarJuego()" class="juego"> <!-- Imagen del segundo videojuego -->
+            </div>
+        
+            <div class="juegosParaVotar">
+                <img src="../img/Street fighter.png" alt="juegoIzquierdo" width="150" onclick="votarJuego()" class="juego"> <!-- Imagen del primer videojuego -->
+                <img src="https://png.pngtree.com/png-vector/20221101/ourmid/pngtree-luxury-vs-versus-transparent-vector-png-image_6405569.png" alt="Vs"> <!-- Imagen del logo Vs -->
+                <img src="../img/Mortal Kombat 2.png" alt="juegoDerecho" width="150" onclick="votarJuego()" class="juego"> <!-- Imagen del segundo videojuego -->
+            </div>
+        
+            <div class="juegosParaVotar">
+                <img src="../img/Donkey Kong Country.png" alt="juegoIzquierdo" width="150" onclick="votarJuego()" class="juego"> <!-- Imagen del primer videojuego -->
+                <img src="https://png.pngtree.com/png-vector/20221101/ourmid/pngtree-luxury-vs-versus-transparent-vector-png-image_6405569.png" alt="Vs"> <!-- Imagen del logo Vs -->
+                <img src="../img/Super metroid.png" alt="juegoDerecho" width="150" onclick="votarJuego()" class="juego"> <!-- Imagen del segundo videojuego -->
+            </div>
+        
+            <div class="juegosParaVotar">
+                <img src="../img/Killer_Instinct_SNES.png" alt="juegoIzquierdo" width="150" onclick="votarJuego()" class="juego"> <!-- Imagen del primer videojuego -->
+                <img src="https://png.pngtree.com/png-vector/20221101/ourmid/pngtree-luxury-vs-versus-transparent-vector-png-image_6405569.png" alt="Vs"> <!-- Imagen del logo Vs -->
+                <img src="../img/Mortal Kombat 3.jpg" alt="juegoDerecho" width="150" onclick="votarJuego()" class="juego"> <!-- Imagen del segundo videojuego -->
+            </div>
+        </main> <!-- Cierre del contenido principal -->
+    </section> <!-- Cierre de bloque tematico -->
+    
+    
+
+    <section> <!-- inicio de bloque tematico formulario -->
+        <form> <!-- Inicio del contenedor del formulario e informacion -->
+            <div class="formulario">
+              <label for="exampleInputEmail1" class="form-label">Pon tu correo para enviar tus votaciones!</label>  <!-- Etiqueta para describir el campo del formulario -->
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> <!-- En esta zona la pagina espera recibir un correo electronico -->
+              <div id="emailHelp" class="form-text">Los votos son confidenciales y solamente tu puedes verlos</div>
+            </div>
+            <div class="formulario">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label> <!-- Etiqueta del nombre del campo -->
+              <input type="password" class="form-control" id="exampleInputPassword1"> <!-- Oculta los caracteres al escribir en este campo -->
+            </div>
+            <div class="formulario">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones de usuario</label>
+            </div>
+          </form> <!-- Cierre del contenedor del formulario e informacion -->
+    </section> <!-- Cierre de bloque tematico formulario-->
+
+    <section> <!-- inicio de bloque tematico soporte -->
+        <div class="soporte">
+            <ul> <!-- Inicio de una lista -->
+                <li>Contactanos: correoElectronico@gmail.com.</li>  <!-- Primer punto de la lista -->
+                <li>©copyright todos los derechos reservados</li>  <!-- Segundo punto de la lista -->
+            </ul> <!-- Cierre de la lista -->
+        </div>
+    </section> <!-- Cierre de bloque tematico soporte-->
+    
+
+    
+    
+    <script src="../js/script.js"></script>  <!-- Accedemos al script llamado "script.js" -->
+
+</body>
+
+</html>

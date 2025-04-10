@@ -1,0 +1,91 @@
+body
+{
+    background-image: url(https://images.unsplash.com/photo-1511512578047-dfb367046420?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZG8lMjBkZSUyMHBhbnRhbGxhJTIwZGUlMjBqdWVnb3xlbnwwfHwwfHx8MA%3D%3D); /* Define la imagen del fondo */
+    background-attachment: fixed; /* La imagen de fondo se fijara con el movimiento del usuario */
+    background-size: cover; /* Ajusta la imagen para que pueda escalarse y cubrir todo el fondo */
+    background-position: center; /* Hace que la imagen este centrada */
+    background-color: #f2f2f2;            /* Color de fondo suave */
+    margin: 0;  /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el padding por defecto (la separacion entre el borde de la pagina y el contenido)*/
+}
+
+.imagenDeFondoAbstracto
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cubre todo el ancho, pero mi imagen esta editada para que tenga un efecto visual */
+  height: 300%; /* Cubre toda la altura de la página */
+  z-index: -1; /* controla la capa de este contenido por debajo del contenido principal */
+  opacity: 0.7;  /* maneja la opacidad de la imagen */
+}
+
+#tituloPrincipal {
+    color: rgb(255, 255, 255);  /* el color principal del texto */
+    position: absolute; /* libertad de movimiento absoluta, ya que es un solo elemento es flexible */
+    top: 10%; 
+    left: 50%;
+    transform: translate(-50%, -50%);   /* Centrado perfecto en horizontal y vertical */
+    font-size: 70px;  /* tamaño de la fuente */
+    font-family: 'Poppins', sans-serif;  /* El estilo de fuente que usara el texto, y si no se encuentra "Poppins" se usara "sans-serif" como reemplazo */
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.4); /*efecto de sombreado en el texto */
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo cuadrado semitransparente */
+    padding: 10px 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor */
+  }
+
+  .juegosParaVotar
+  {
+    display: flex; /* Organiza y alinea los elementos de forma flexible */
+    justify-content: center; /* centra la fila completa */
+    align-items: center; /* alinea verticalmente si hay diferencias en altura */
+    gap: 20px; /* espacio entre cada elemento */
+    margin: 200px 0; /* separación vertical entre filas */
+  }
+
+  .juegosParaVotar .juego
+  {
+    width: 350px;  /* Define el ancho fijado de la imagen */
+    height: auto; /* Ajusta la altura automaticamente y hace inercia con "width" */
+    cursor: pointer; /* Cuando el usuario pase el mouse por encima de la imagen, el cursor cambiara a una manita */
+    transition: transform 0.2s ease; /* Suaviza la animacion cuando la imagen cambia de forma con su transform */
+    display: inline-block; /* Hace que se convierta en un bloque, para darle tamaño, margen, etc */
+    padding: 5px; /* Agrega espacio intero entre el contenido del bloque y su borde */
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); /* Aplica un fondo de degradado con multiples colores con un angulo de 45 grados*/
+    border-radius: 12px; /* Redondea las esquinas */
+    border: 4px solid #0c0c0c; /* Dibuja un borde solido de 4 pixeles de grosor */
+    box-shadow: 0 0 50px #000000; /* Hace que la imagen tenga un sombreado de fondo, puede ser cualquier color */
+
+  }
+  .juegosParaVotar .juego:hover
+  {
+    transform: scale(1.20); /* cuando el mouse pasa por encima de la imagen, esta aumentara su tamaño en un 20% */
+  }
+
+  .juegosParaVotar .Vs
+  {
+    width: 50px; /* Hace que el logo tenga 50px de ancho */
+    height: auto; /* Hace que la altura se ajuste sola */
+  }
+
+  .formulario
+  {
+    color: #c9c9c9; /* Color del texto del formulario */
+    font-family: 'Poppins', sans-serif; /* El estilo de fuente que usara el texto, y si no se encuentra "Poppins" se usara "sans-serif" como reemplazo */
+    width: 90%; /* El formulario ocupara el 90% del ancho disponible que esta en dentro */
+    max-width: 400px; /* Ancho máximo para mantenerlo compacto */
+    margin: 40px auto; /* Centrar horizontalmente y dejar espacio arriba y abajo */
+    padding: 20px; /* Agrega un espacio intero entre el borde y el contenido */
+    background-color: #000000d0; /* Fondo de un color */
+    border: 1px solid #ddd; /* Bordeado ligero */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgb(255, 255, 255); /* Sombra sutil para darle profundidad */
+  }
+
+  .soporte
+  {
+    color: #6e6e6e;
+  }
+  
+  
